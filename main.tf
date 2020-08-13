@@ -17,4 +17,9 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
   name = "TFResourceGroup"
   location = "uksouth"
+
+  tags = {
+    environment = "Terraform"
+    deployedfor = "LA-Azure-TF"
+  }
 }
