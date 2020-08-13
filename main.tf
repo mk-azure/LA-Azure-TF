@@ -13,3 +13,8 @@ provider "azurerm" {
   features {}
   version = "v2.21.0"
 }
+
+resource "azurerm_resource_group" "rg" {
+  name = "TFResourceGroup"
+  location = "uksouth"
+}
